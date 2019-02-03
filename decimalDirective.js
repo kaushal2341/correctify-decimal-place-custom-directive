@@ -36,7 +36,7 @@ angular.module('myApp').directive('decimalPlaces', function () {
 			   if (input) {
 				   if(!isNotNumber){
                     if (!input.match(regexForDecimalPlaces)) {
-                        let indexOfFirstDecimal = input.indexOf('.');
+                        let indexOfFirstDecimal = input.indexOf('\.');
                         let substringInput = input.substring(indexOfFirstDecimal + 1,
                             input.length);
                         tempInput = substringInput.replace('\.', '');
